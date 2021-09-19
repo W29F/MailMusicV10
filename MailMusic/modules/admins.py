@@ -54,7 +54,6 @@ async def pause(_, message: Message):
         await message.reply_text("❗ Nothing is playing!")
         
 
-
 @Client.on_message(command("resume") & other_filters)
 @errors
 @authorized_users_only
@@ -66,7 +65,6 @@ async def resume(_, message: Message):
       else:
         await message.reply_text("❗ Nothing is paused!")
         
-
 
 @Client.on_message(command("end") & other_filters)
 @errors
