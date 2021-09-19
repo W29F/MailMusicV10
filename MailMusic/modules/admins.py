@@ -114,9 +114,9 @@ async def skip(_, message: Message):
 async def mute(_, message: Message):
     chat_id = get_chat_id(message.chat)
     result = callsmusic.mute(chat_id)
-        
-      if result == 0
-        await message.reply_text("✅ Muted")
+await message.reply_text("✅ Muted")        
+      if  
+     result == 0
       else:
         await message.reply_text("❌ Already muted")
       if:
@@ -131,9 +131,9 @@ async def mute(_, message: Message):
 async def unmute(_, message: Message):
     chat_id = get_chat_id(message.chat)
     result = callsmusic.unmute(chat_id)
-        
-      if result == 0
-        await message.reply_text("✅ Unmuted")
+await message.reply_text("✅ Unmuted")  
+      if 
+        result == 0 
       else:
         await message.reply_text("❌ Not muted")
       if:
